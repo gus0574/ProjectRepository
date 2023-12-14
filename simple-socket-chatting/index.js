@@ -18,6 +18,9 @@ const io = new Server(httpServer, {
    }
 });
 
+// io.js를 가져와서 함수를 받고 매개변수로 io 전달
+require("./utils/io")(io);
+
 //특정 포트를 기준으로 서버 실행 
 httpServer.listen(process.env.PORT, 
    () => console.log("server listening on port : ", process.env.PORT));
