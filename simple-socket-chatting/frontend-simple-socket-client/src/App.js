@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 //server.js 에서 생성한 socket 가져오기
 import socket from "./server"
